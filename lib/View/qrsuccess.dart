@@ -47,7 +47,7 @@ class SuccessPage extends StatelessWidget {
                       SizedBox(width: 65.w,),
                       InkWell(
                         onTap: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => SelectScan(eventId: '', isCheckOut: true)));
+
                         },
                         child: Image.asset(
                           'assets/images/backward.png',

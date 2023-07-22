@@ -67,7 +67,7 @@ class _QROutScannerPageState extends State<QROutScannerPage> {
             createdAt = decodedResponse['data']['ticket']['booking']['created_at'];
           });
           navigateToSuccessPage(
-              name, surname, ticketId, widget.zoneName, email, phone,createdAt);
+              name, surname, ticketId, widget.zoneName, email, phone, createdAt);
         } else {
           print("AAAA");
           navigateToFailurePage();
@@ -79,12 +79,12 @@ class _QROutScannerPageState extends State<QROutScannerPage> {
     } catch (e) {
       print('HH: ${e}');
       navigateToSuccessPage(
-          name, surname, ticketId, widget.zoneName, email, phone,createdAt);
+          name, surname, ticketId, widget.zoneName, email, phone, createdAt);
     }
   }
 
   void navigateToSuccessPage(String name, String surname, String ticketId,
-      String zone, String email, String phone,String createdAt) {
+      String zone, String email, String phone, String createdAt) {
     Navigator.push(
       context,
       MaterialPageRoute(
